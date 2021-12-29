@@ -34,6 +34,17 @@ end
 --选择排序
 function MySort:Selection_Sort(List, func)
   func=func or function(x,y) return x<y end
-  
+  for i=1,#List do
+    local cur=i
+    for j=i+1,#List do
+      if not func(List[cur],List[j]) then
+        cur=j
+      end
+    end
+    List[i],List[cur]=List[cur],List[i]
+  end
+  out(List)
 end
+
 MySort:Bubble_Sort({8,99,10,3,1,4})
+MySort:Selection_Sort({8,99,10,3,1,4})
