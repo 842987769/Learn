@@ -6,22 +6,20 @@
 OperationFactory={}
 
 --运算类
-Operation={}
+Operation={NumberA=0,NumberB=1}
  
 function Operation:new(o)
-	o = o or {}
+	o=o or {}
 	setmetatable(o,self)
 	self.__index=self
-	o.NumberA=0
-	o.NumberB=1
 	return o
 end
  
 --+-*/子类
-OperationAdd = Operation:new()
-OperationSub = Operation:new()
-OperationMul = Operation:new()
-OperationDiv = Operation:new()
+OperationAdd=Operation:new()
+OperationSub=Operation:new()
+OperationMul=Operation:new()
+OperationDiv=Operation:new()
 
 function OperationAdd:GetResult()
 	if self.NumberA and self.NumberB then
@@ -65,8 +63,8 @@ function OperationFactory : CreateOperation(o)
   return oper[o]
 end
  
-Oper1 = OperationFactory:CreateOperation("+")
-Oper1.NumberA = 1
-Oper1.NumberB = 2
+Oper1=OperationFactory:CreateOperation("+")
+Oper1.NumberA=1
+Oper1.NumberB=2
 print(Oper1:GetResult())
 return OperationFactory
