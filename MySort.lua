@@ -17,14 +17,14 @@ end
 function MySort:Bubble_Sort(List, func)
   func=func or function(x,y) return x<y end
   for i=1,#List do
-    local ifchange=true
+    local incensed =true
     for j=1,#List-i do
       if not func(List[j],List[j+1]) then
         List[j],List[j+1]= List[j+1],List[j]
-        ifchange=false
+        incensed =false
       end
     end
-    if ifchange then
+    if incensed then
       break
     end
   end
