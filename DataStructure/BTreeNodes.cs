@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace C_sharp_DataStructure_Sort
 {
+    /// <summary>
+    /// Author:Jigger
+    /// Date:2022/1
+    /// 二叉树
+    /// </summary>
     class BTreeNodes<T>:TreeNodes<T>
     {
         private const int MaxNum = 2;//二叉树最大度为2
@@ -93,6 +98,7 @@ namespace C_sharp_DataStructure_Sort
             }
             return false;
         }
+        //删除孩子节点
         public override void RemoveChild(TreeNodes<T> node)
         {
             if (Children[0] == node)
