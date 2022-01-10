@@ -30,7 +30,8 @@ namespace C_sharp_DataStructure_Sort
             };
             Num = 2;
         }
-        public BTreeNodes<T> LeftChild {
+        public BTreeNodes<T> LeftChild 
+        {
             get => (BTreeNodes<T>)Children[0];
             set => Children[0] = value;
         }
