@@ -211,7 +211,7 @@ namespace C_sharp_DataStructure_Sort
             pre.NextNode = newNode;
             _length++;
         }
-        //节点插入
+        //节点位置插入
         public bool Insert(LinkedNode<T> insertNode, LinkedNode<T> newNode) 
         {
             if (IsEmpty() || HasCircle() != null)
