@@ -149,7 +149,10 @@ namespace C_sharp_DataStructure_Sort
             {
                 cur = cur.NextNode;
             }
-            if (cur.Data.Equals(data)) return cur;
+            if (cur.Data.Equals(data)) 
+            {
+                return cur;
+            }
             return null;
         }
         //查找索引
@@ -166,7 +169,10 @@ namespace C_sharp_DataStructure_Sort
                 cur = cur.NextNode;
                 i++;
             }
-            if (cur.Data.Equals(data)) return i;
+            if (cur.Data.Equals(data))            
+            {
+                return cur;
+            }
             return -1;
         }
         //查找索引处的值
