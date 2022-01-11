@@ -171,7 +171,7 @@ namespace C_sharp_DataStructure_Sort
             }
             if (cur.Data.Equals(data))            
             {
-                return cur;
+                return i;
             }
             return -1;
         }
