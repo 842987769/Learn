@@ -223,7 +223,7 @@ namespace C_sharp_DataStructure_Sort
             {
                 cur = cur.NextNode;
             }
-            if (cur == insertNode)
+            if (cur.NextNode == insertNode)
             {
                 newNode.NextNode = cur.NextNode;
                 cur.NextNode = newNode;
