@@ -227,9 +227,9 @@ namespace C_sharp_DataStructure_Sort
             {
                 newNode.NextNode = cur.NextNode;
                 cur.NextNode = newNode;
+                _length++;
                 return true;
             }
-            _length++;
             return false;
         }
         //反转链表
