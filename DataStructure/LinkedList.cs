@@ -9,9 +9,9 @@ namespace C_sharp_DataStructure_Sort
     /// <summary>
     /// Author:Jigger
     /// Date:2022/1
-    /// 单链表
+    /// 双端链表
     /// </summary>
-    //单链表节点
+    //双端链表节点
     class LinkedNode<T>
     {
         private T _data;
@@ -31,7 +31,7 @@ namespace C_sharp_DataStructure_Sort
             NextNode = null;
         }
     }
-    //单链表
+    //双端链表
     class LinkedList<T>
     {
         private LinkedNode<T> _head;//头节点，不计入链表长度，不作为存放数据的节点
@@ -46,7 +46,7 @@ namespace C_sharp_DataStructure_Sort
             Head = new LinkedNode<T>();
             Tail = Head;
         }
-        //构造定长单链表
+        //构造定长链表
         public LinkedList(int len) 
         {
             _length = len;
