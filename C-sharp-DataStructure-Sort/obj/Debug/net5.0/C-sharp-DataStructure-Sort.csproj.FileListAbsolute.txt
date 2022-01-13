@@ -1,0 +1,16 @@
+D:\learn\C-sharp-DataStructure-Sort\bin\Debug\net5.0\C-sharp-DataStructure-Sort.exe
+D:\learn\C-sharp-DataStructure-Sort\bin\Debug\net5.0\C-sharp-DataStructure-Sort.deps.json
+D:\learn\C-sharp-DataStructure-Sort\bin\Debug\net5.0\C-sharp-DataStructure-Sort.runtimeconfig.json
+D:\learn\C-sharp-DataStructure-Sort\bin\Debug\net5.0\C-sharp-DataStructure-Sort.runtimeconfig.dev.json
+D:\learn\C-sharp-DataStructure-Sort\bin\Debug\net5.0\C-sharp-DataStructure-Sort.dll
+D:\learn\C-sharp-DataStructure-Sort\bin\Debug\net5.0\ref\C-sharp-DataStructure-Sort.dll
+D:\learn\C-sharp-DataStructure-Sort\bin\Debug\net5.0\C-sharp-DataStructure-Sort.pdb
+D:\learn\C-sharp-DataStructure-Sort\obj\Debug\net5.0\C-sharp-DataStructure-Sort.csproj.AssemblyReference.cache
+D:\learn\C-sharp-DataStructure-Sort\obj\Debug\net5.0\C-sharp-DataStructure-Sort.GeneratedMSBuildEditorConfig.editorconfig
+D:\learn\C-sharp-DataStructure-Sort\obj\Debug\net5.0\C-sharp-DataStructure-Sort.AssemblyInfoInputs.cache
+D:\learn\C-sharp-DataStructure-Sort\obj\Debug\net5.0\C-sharp-DataStructure-Sort.AssemblyInfo.cs
+D:\learn\C-sharp-DataStructure-Sort\obj\Debug\net5.0\C-sharp-DataStructure-Sort.csproj.CoreCompileInputs.cache
+D:\learn\C-sharp-DataStructure-Sort\obj\Debug\net5.0\C-sharp-DataStructure-Sort.dll
+D:\learn\C-sharp-DataStructure-Sort\obj\Debug\net5.0\ref\C-sharp-DataStructure-Sort.dll
+D:\learn\C-sharp-DataStructure-Sort\obj\Debug\net5.0\C-sharp-DataStructure-Sort.pdb
+D:\learn\C-sharp-DataStructure-Sort\obj\Debug\net5.0\C-sharp-DataStructure-Sort.genruntimeconfig.cache
