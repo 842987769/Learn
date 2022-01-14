@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace C_sharp_DataStructure_Sort
 {
+    /// <summary>
+    /// Author:Jigger
+    /// Date:2022/1
+    /// 树
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     abstract class Nodes<T>
     {
         private T _data;//节点数据

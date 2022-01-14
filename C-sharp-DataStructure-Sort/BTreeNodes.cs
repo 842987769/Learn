@@ -7,6 +7,12 @@ using System.Threading.Tasks;
 
 namespace C_sharp_DataStructure_Sort
 {
+    /// <summary>
+    /// Author:Jigger
+    /// Date:2022/1
+    /// 二叉树
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     class BTreeNodes<T>:Nodes<T>
     {
         public Nodes<T> BinaryRoot { get => this; }

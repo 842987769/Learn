@@ -11,7 +11,7 @@ namespace C_sharp_DataStructure_Sort
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("----------树2----------");
+            /*Console.WriteLine("----------树2----------");
             TreeNodes<int> t3 = new TreeNodes<int>(0);
             t3.AddChild(new TreeNodes<int>(1));
             t3.AddChild(new TreeNodes<int>(2));
@@ -31,7 +31,7 @@ namespace C_sharp_DataStructure_Sort
             Console.WriteLine("度：" + t3.Num);
             foreach (Nodes<int> t in t3.BreadthFirstSearch())
             {
-                Console.Write("宽：" + t.Data + "\t");
+                Console.Write("宽搜：" + t.Data + "\t");
             }
             Console.WriteLine();
             Console.WriteLine("--------二叉树1.1-------");
@@ -71,7 +71,10 @@ namespace C_sharp_DataStructure_Sort
             Console.WriteLine();
             t5.Head.InOrder();
             Console.WriteLine();
-            t5.Head.PostOrder();
+            t5.Head.PostOrder();*/
+            int[] list = new int[] { 8, 5, 4, 8, 9, 7, 2, 4, 10, 22, 8 };
+            MySort<int>.HeapSort(list);
+            foreach (int i in list) Console.Write(i + "\t");
         }
     }
 }
