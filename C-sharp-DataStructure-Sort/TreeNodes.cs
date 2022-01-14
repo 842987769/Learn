@@ -22,8 +22,8 @@ namespace C_sharp_DataStructure_Sort
         {
             _data = data;
         }
-        //广度遍历
-        public Nodes<T> BreadthFirstSearch(T target)
+        //广度遍历迭代器
+        public IEnumerable<Nodes<T>> BreadthFirstSearch()
         {
             Queue<Nodes<T>> q = new Queue<Nodes<T>>();
             q.Enqueue(this);
@@ -32,7 +32,7 @@ namespace C_sharp_DataStructure_Sort
                 Nodes<T> current = q.Dequeue();
                 if (current != null)
                 {
-                    if (current.Data.Equals(target)) return current;
+                    yield return current;
                     int i = 0;
                     Nodes<T> t = current.GetChild(i);
                     while (t != null)
@@ -43,10 +43,9 @@ namespace C_sharp_DataStructure_Sort
                     }
                 }
             }
-            return null;
         }
-        //深度搜索
-        public Nodes<T> DeepthFirstSearch(T target)
+        //深度搜索迭代器
+        public IEnumerable<Nodes<T>> DeepthFirstSearch()
         {
             Stack<Nodes<T>> s = new Stack<Nodes<T>>();
             s.Push(this);
@@ -55,9 +54,7 @@ namespace C_sharp_DataStructure_Sort
                 Nodes<T> current = s.Pop();
                 if (current != null)
                 {
-                    if (current.Data.Equals(target)) {
-                        return current;
-                    }
+                    yield return current;
                     int i = 0;
                     Nodes<T> t = current.GetChild(i);
                     while(t != null)
@@ -68,7 +65,6 @@ namespace C_sharp_DataStructure_Sort
                     }
                 }
             }
-            return null;
         }
     }
 
@@ -107,14 +103,22 @@ namespace C_sharp_DataStructure_Sort
         public virtual bool AddChild(T target, TreeNodes<T> node, ESearchWay s = ESearchWay.BFS)
         {
             TreeNodes<T> cur = null;
+            IEnumerable i = null;
             switch (s)
             {
                 case ESearchWay.BFS:
-                    cur = (TreeNodes<T>)BreadthFirstSearch(target);
+                    i = BreadthFirstSearch();
                     break;
                 case ESearchWay.DFS:
-                    cur = (TreeNodes<T>)DeepthFirstSearch(target);
+                    i = DeepthFirstSearch();
                     break;
+            }
+            foreach(Nodes<T> t in i) 
+            {
+                if (t.Data.Equals(target))
+                {
+                    cur = (TreeNodes<T>)t;
+                }
             }
             if (cur != null)
             {
@@ -168,14 +172,22 @@ namespace C_sharp_DataStructure_Sort
         public bool Insert(T target, TreeNodes<T> node, ESearchWay s = ESearchWay.BFS)
         {
             TreeNodes<T> cur = null;
+            IEnumerable i = null;
             switch (s)
             {
                 case ESearchWay.BFS:
-                    cur = (TreeNodes<T>)BreadthFirstSearch(target);
+                    i = BreadthFirstSearch();
                     break;
                 case ESearchWay.DFS:
-                    cur = (TreeNodes<T>)DeepthFirstSearch(target);
+                    i = DeepthFirstSearch();
                     break;
+            }
+            foreach (Nodes<T> t in i)
+            {
+                if (t.Data.Equals(target))
+                {
+                    cur = (TreeNodes<T>)t;
+                }
             }
             if (cur != null)
             {
@@ -188,14 +200,22 @@ namespace C_sharp_DataStructure_Sort
         public bool Delete(T target, ESearchWay s = ESearchWay.BFS)
         {
             TreeNodes<T> cur = null;
+            IEnumerable i = null;
             switch (s)
             {
                 case ESearchWay.BFS:
-                    cur = (TreeNodes<T>)BreadthFirstSearch(target);
+                    i = BreadthFirstSearch();
                     break;
                 case ESearchWay.DFS:
-                    cur = (TreeNodes<T>)DeepthFirstSearch(target);
+                    i = DeepthFirstSearch();
                     break;
+            }
+            foreach (Nodes<T> t in i)
+            {
+                if (t.Data.Equals(target))
+                {
+                    cur = (TreeNodes<T>)t;
+                }
             }
             if (cur != null)
             {

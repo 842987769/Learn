@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace C_sharp_DataStructure_Sort
 {
-    class MySort<T>
+    static class MySort<T> where T:IComparable
     {
-        private IList<T> array;
-        
+        public static void QuickSort()
+        {
+            
+        }       
     }
 }

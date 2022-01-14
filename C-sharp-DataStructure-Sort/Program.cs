@@ -21,10 +21,19 @@ namespace C_sharp_DataStructure_Sort
             t3.Insert(4, new TreeNodes<int>(5));
             t3.Insert(5, new TreeNodes<int>(6));
             Console.WriteLine("度：" + t3.Num);
-            Console.WriteLine(t3.BreadthFirstSearch(2) == null);
+            foreach (Nodes<int> t in t3.BreadthFirstSearch())
+            {
+                Console.Write("宽：" + t.Data + "\t");
+            }
             t3.Delete(3);
             t3.Delete(2);
+            Console.WriteLine();
             Console.WriteLine("度：" + t3.Num);
+            foreach (Nodes<int> t in t3.BreadthFirstSearch())
+            {
+                Console.Write("宽：" + t.Data + "\t");
+            }
+            Console.WriteLine();
             Console.WriteLine("--------二叉树1.1-------");
             BTreeNodes<int> t4 = new BTreeNodes<int>(0);
             t4.LeftChild = new BTreeNodes<int>(1);
