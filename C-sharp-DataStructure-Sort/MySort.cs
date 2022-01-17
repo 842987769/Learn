@@ -54,7 +54,7 @@ namespace C_sharp_DataStructure_Sort
         {
             SelectedSort(ref List, Lo, Hi, Comparer<T>.Default);
         }
-        public static void InsertSort(ref T[] List)
+        public static void SelectedSort(ref T[] List)
         {
             SelectedSort(ref List, List.GetLowerBound(0), List.GetUpperBound(0));
         }
